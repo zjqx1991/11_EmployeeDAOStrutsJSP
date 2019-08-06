@@ -7,17 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ee26f0e-0efd-4cab-b16f-b737278b692a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/revanwang/employee/query/EmployeeQueryObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/revanwang/employee/query/PageResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/com/revanwang/employee/dao/IEmployeeDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/revanwang/employee/dao/IEmployeeDAOTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/01_EmployeeDAOStrutsJSP_war_exploded/WEB-INF/JSP/employee_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/01_EmployeeDAOStrutsJSP_war_exploded/WEB-INF/JSP/employee_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/01_EmployeeDAOStrutsJSP_war_exploded/WEB-INF/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/01_EmployeeDAOStrutsJSP_war_exploded/WEB-INF/classes/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/struts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/revanwang/employee/dao/IEmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/revanwang/employee/dao/IEmployeeDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/revanwang/employee/dao/impl/EmployDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/revanwang/employee/dao/impl/EmployDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/revanwang/employee/query/EmployeeQueryObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/revanwang/employee/query/EmployeeQueryObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/revanwang/employee/util/result/IResultHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/revanwang/employee/util/result/IResultHandle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/revanwang/employee/web/action/EmployeeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/revanwang/employee/web/action/EmployeeAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/JSP/employee_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/JSP/employee_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/production/01_EmployeeDAOStrutsJSP/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/production/01_EmployeeDAOStrutsJSP/struts.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,6 +112,22 @@
       <option name="PACKAGE_NAME" value="com.revanwang.employee.dao" />
       <option name="MAIN_CLASS_NAME" value="com.revanwang.employee.dao.IEmployeeDAOTest" />
       <option name="METHOD_NAME" value="getList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IEmployeeDAOTest.pageQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="01_EmployeeDAOStrutsJSP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.revanwang.employee.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.revanwang.employee.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.revanwang.employee.dao.IEmployeeDAOTest" />
+      <option name="METHOD_NAME" value="pageQuery" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -232,9 +247,11 @@
       <item itemvalue="Tomcat Server.Tomcat7" />
       <item itemvalue="JUnit.IEmployeeDAOTest.save" />
       <item itemvalue="JUnit.IEmployeeDAOTest.query" />
+      <item itemvalue="JUnit.IEmployeeDAOTest.pageQuery" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IEmployeeDAOTest.pageQuery" />
         <item itemvalue="JUnit.IEmployeeDAOTest.query" />
         <item itemvalue="JUnit.IEmployeeDAOTest.save" />
         <item itemvalue="JUnit.IEmployeeDAOTest.getList" />
@@ -257,7 +274,7 @@
       <workItem from="1564994916846" duration="74000" />
       <workItem from="1564995108871" duration="150000" />
       <workItem from="1564995276467" duration="2633000" />
-      <workItem from="1565055967686" duration="14178000" />
+      <workItem from="1565055967686" duration="19550000" />
     </task>
     <servers />
   </component>

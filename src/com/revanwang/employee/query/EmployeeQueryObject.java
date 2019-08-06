@@ -23,6 +23,10 @@ public class EmployeeQueryObject {
     @Getter@Setter
     private BigDecimal maxSalary;   //员工最高工资
 
+    @Getter@Setter
+    private Integer currentPage = 1;
+    @Getter@Setter
+    private Integer pageSize = 10;
     private List<String> conditions = new ArrayList<>();
     private List<Object> paramsList = new ArrayList();
 

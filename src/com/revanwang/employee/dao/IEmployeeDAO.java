@@ -2,6 +2,7 @@ package com.revanwang.employee.dao;
 
 import com.revanwang.employee.domain.Employee;
 import com.revanwang.employee.query.EmployeeQueryObject;
+import com.revanwang.employee.query.PageResult;
 
 import java.util.List;
 
@@ -45,4 +46,9 @@ public interface IEmployeeDAO {
      */
     List<Employee> query(EmployeeQueryObject qo);
 
+    /**
+     * @param qo 查询条件对象
+     * @return
+     */
+    PageResult pageQuery(EmployeeQueryObject qo);
 }

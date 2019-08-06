@@ -27,7 +27,7 @@
             <th>员工工资</th>
             <th scope="2">操作</th>
         </tr>
-        <s:iterator value="#employees">
+        <s:iterator value="#pageResult.reslutList">
             <tr>
                 <td><s:property value="id"></s:property> </td>
                 <td><s:property value="name"></s:property> </td>
@@ -44,6 +44,28 @@
                 </td>
             </tr>
         </s:iterator>
+        <tr align="center">
+            <td colspan="5">
+                <s:a namespace="/" action="employee">
+                    <s:param name="qo.currentPage" value="1"/>
+                    首页
+                </s:a>
+                <s:a namespace="/" action="employee">
+                    <s:param name="qo.currentPage" value="#pageResult.prevPage"/>
+                    上一页
+                </s:a>
+                <s:a namespace="/" action="employee">
+                    <s:param name="qo.currentPage" value="#pageResult.nextPage"/>
+                    下一页
+                </s:a>
+                <s:a namespace="/" action="employee">
+                    <s:param name="qo.currentPage" value="#pageResult.totalPage"/>
+                    尾页
+                </s:a>
+                共<s:property value="#pageResult.totalPage" />页，
+                当前<s:property value="#pageResult.currentPage" />/<s:property value="#pageResult.totalPage" />
+            </td>
+        </tr>
     </table>
 </body>
 </html>

@@ -6,6 +6,7 @@ import com.revanwang.employee.dao.IEmployeeDAO;
 import com.revanwang.employee.dao.impl.EmployDAOImpl;
 import com.revanwang.employee.domain.Employee;
 import com.revanwang.employee.query.EmployeeQueryObject;
+import com.revanwang.employee.query.PageResult;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -29,10 +30,9 @@ public class EmployeeAction extends ActionSupport {
 
     @Override
     public String execute() {
-        System.out.println("qo = " + qo);
-        List<Employee> eList = employeeDAO.query(this.qo);
+        PageResult pageResult = this.employeeDAO.pageQuery(this.qo);
         //存储数据到 list.jsp 的 Context中
-        ActionContext.getContext().put("employees", eList);
+        ActionContext.getContext().put("pageResult", pageResult);
         return LIST;
     }
 
