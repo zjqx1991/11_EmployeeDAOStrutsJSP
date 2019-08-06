@@ -7,6 +7,7 @@ import org.junit.Test;
 import java.math.BigDecimal;
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 import static org.junit.Assert.*;
 
@@ -16,12 +17,17 @@ public class IEmployeeDAOTest {
 
     @Test
     public void save() {
-        Employee employee = new Employee();
-        employee.setName("Revan_4");
-        employee.setAge(34);
-        employee.setSalary(new BigDecimal(2400));
 
-        employeeDAO.save(employee);
+        for (int i = 20; i < 50; i++) {
+
+            Employee employee = new Employee();
+            employee.setName("test_" + i);
+            employee.setAge(i);
+            employee.setSalary(new BigDecimal(800 + ThreadLocalRandom.current().nextInt(0, 1200)));
+
+            employeeDAO.save(employee);
+        }
+
     }
 
     @Test

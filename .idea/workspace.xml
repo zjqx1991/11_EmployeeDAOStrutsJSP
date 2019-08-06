@@ -6,7 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ee26f0e-0efd-4cab-b16f-b737278b692a" name="Default Changelist" comment="" />
+    <list default="true" id="1ee26f0e-0efd-4cab-b16f-b737278b692a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/com/revanwang/employee/dao/IEmployeeDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/revanwang/employee/dao/IEmployeeDAOTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +27,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -31,11 +38,13 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1OzAh7gplV5s7ELgsAxUkN7WRrT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
@@ -84,7 +93,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat7">
+  <component name="RunManager" selected="JUnit.IEmployeeDAOTest.save">
     <configuration name="IEmployeeDAOTest.getList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="01_EmployeeDAOStrutsJSP" />
       <extension name="coverage">
@@ -96,6 +105,22 @@
       <option name="PACKAGE_NAME" value="com.revanwang.employee.dao" />
       <option name="MAIN_CLASS_NAME" value="com.revanwang.employee.dao.IEmployeeDAOTest" />
       <option name="METHOD_NAME" value="getList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IEmployeeDAOTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="01_EmployeeDAOStrutsJSP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.revanwang.employee.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.revanwang.employee.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.revanwang.employee.dao.IEmployeeDAOTest" />
+      <option name="METHOD_NAME" value="save" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,9 +206,11 @@
     <list>
       <item itemvalue="JUnit.IEmployeeDAOTest.getList" />
       <item itemvalue="Tomcat Server.Tomcat7" />
+      <item itemvalue="JUnit.IEmployeeDAOTest.save" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IEmployeeDAOTest.save" />
         <item itemvalue="JUnit.IEmployeeDAOTest.getList" />
       </list>
     </recent_temporary>
@@ -204,11 +231,22 @@
       <workItem from="1564994916846" duration="74000" />
       <workItem from="1564995108871" duration="150000" />
       <workItem from="1564995276467" duration="2633000" />
-      <workItem from="1565055967686" duration="10443000" />
+      <workItem from="1565055967686" duration="10659000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
