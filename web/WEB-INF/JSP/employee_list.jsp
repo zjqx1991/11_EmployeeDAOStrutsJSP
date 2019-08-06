@@ -12,6 +12,12 @@
     <title>员工信息列表</title>
 </head>
 <body>
+    <s:form namespace="/" action="employee">
+        <s:textfield name="qo.name">名称</s:textfield>
+        <s:textfield name="qo.minSalary">价格从</s:textfield>
+        <s:textfield name="qo.maxSalary">到</s:textfield>
+        <s:submit value="查询"></s:submit>
+    </s:form>
     <s:a namespace="/" action="employee_input">添加新员工</s:a>
     <table border="1" cellpadding="0"   cellspacing="0" width="90%">
         <tr>

@@ -2,8 +2,8 @@ package com.revanwang.employee.dao.impl;
 
 import com.revanwang.employee.dao.IEmployeeDAO;
 import com.revanwang.employee.domain.Employee;
+import com.revanwang.employee.query.EmployeeQueryObject;
 import com.revanwang.employee.util.db.JdbcTemplate;
-import com.revanwang.employee.util.result.IResultHandle;
 import com.revanwang.employee.util.result.impl.ResultHandle;
 
 import java.util.List;
@@ -15,6 +15,16 @@ import java.util.List;
  * @create: 2019-08-05 10:24
  **/
 public class EmployDAOImpl implements IEmployeeDAO {
+    @Override
+    public List<Employee> query(EmployeeQueryObject qo) {
+        String sql = "SELECT * FROM t_employee" + qo.getQuery();
+        System.out.println(sql);
+        System.out.println(qo.getParams());
+
+        return JdbcTemplate.executeQuery(sql, new ResultHandle<>(Employee.class), qo.getParams().toArray());
+    }
+
+    /******************* 以上是高级查询 ******************/
     @Override
     public void save(Employee e) {
         String sql = "INSERT INTO t_employee (name, age, salary) VALUES (?, ?, ?)";

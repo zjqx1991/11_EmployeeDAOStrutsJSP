@@ -5,6 +5,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.revanwang.employee.dao.IEmployeeDAO;
 import com.revanwang.employee.dao.impl.EmployDAOImpl;
 import com.revanwang.employee.domain.Employee;
+import com.revanwang.employee.query.EmployeeQueryObject;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,12 +22,15 @@ public class EmployeeAction extends ActionSupport {
 
     @Getter
     private Employee employee = new Employee(); //Action与JSP 数据相互传值通道
+    @Getter
+    private EmployeeQueryObject qo = new EmployeeQueryObject();
     private IEmployeeDAO employeeDAO = new EmployDAOImpl();
     private final String LIST = "list";
 
     @Override
     public String execute() {
-        List<Employee> eList = employeeDAO.getList();
+        System.out.println("qo = " + qo);
+        List<Employee> eList = employeeDAO.query(this.qo);
         //存储数据到 list.jsp 的 Context中
         ActionContext.getContext().put("employees", eList);
         return LIST;

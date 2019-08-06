@@ -2,6 +2,7 @@ package com.revanwang.employee.dao;
 
 import com.revanwang.employee.dao.impl.EmployDAOImpl;
 import com.revanwang.employee.domain.Employee;
+import com.revanwang.employee.query.EmployeeQueryObject;
 import org.junit.Test;
 
 import java.math.BigDecimal;
@@ -63,4 +64,18 @@ public class IEmployeeDAOTest {
             System.out.println(it.next());
         }
     }
+
+    @Test
+    public void query() {
+        EmployeeQueryObject qo = new EmployeeQueryObject();
+        qo.setName("Revan");
+        qo.setMinSalary(new BigDecimal(2500));
+        qo.setMaxSalary(new BigDecimal(7999));
+        List<Employee> list = employeeDAO.query(qo);
+        Iterator<Employee> it = list.iterator();
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
+    }
+
 }

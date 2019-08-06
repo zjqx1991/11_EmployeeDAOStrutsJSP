@@ -7,6 +7,7 @@
 
 <!--    <constant name="struts.enable.DynamicMethodInvocation" value="false" />-->
 <!--    <constant name="struts.devMode" value="true" />-->
+    <constant name="struts.ui.theme" value="simple"></constant>
 
     <package name="employPKG" namespace="/" extends="struts-default">
         <action name="employee_*" class="com.revanwang.employee.web.action.EmployeeAction" method="{1}">
